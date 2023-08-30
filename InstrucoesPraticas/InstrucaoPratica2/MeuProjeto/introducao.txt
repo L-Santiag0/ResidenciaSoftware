@@ -2,4 +2,4 @@ O projeto foi desenvolvido com o objetivo de resolver os exercícios da
 'Instrução Prática 2'.
 
 Adicionando a informação sobre o novo recurso que será incorporado
-ao projeto, conforme o exercício 3.
+ao projeto, conforme o exercício 3. Informação adicionada!
