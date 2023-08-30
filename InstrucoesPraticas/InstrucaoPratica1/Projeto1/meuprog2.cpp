@@ -5,7 +5,7 @@ using namespace std;
 
 int main(void) {
 
-    int A, B;
+    float A, B;
     cout << "Qual o primeiro número? "; 
     cin >> A;
     cout << "Qual o segundo número? ";
