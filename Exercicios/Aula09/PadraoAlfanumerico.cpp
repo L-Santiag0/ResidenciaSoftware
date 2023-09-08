@@ -2,9 +2,9 @@
 	Escreva um programa em C++ que gere e imprima o seguinte padrão de
 	caracteres alfanuméricos, onde o número fornecido pelo usuário é a altura
 	do padrão:	A
-				BC
-				DEF
-				GHIJ
+			BC
+			DEF
+			GHIJ
 */
 
 #include <iostream>
