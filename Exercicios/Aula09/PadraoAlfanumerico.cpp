@@ -4,7 +4,8 @@ using namespace std;
 
 int main()
 {
-	char alfabetoUp = 'A', alfabetoLower = 'a', numeros = '0';    int altura;
+	char alfabetoUp = 'A', alfabetoLower = 'a', numeros = '0';    
+	int altura;
 	
 	cout << "Digite a quantidade de linhas: ";
 	cin >> altura;
