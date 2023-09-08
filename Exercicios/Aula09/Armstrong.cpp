@@ -1,5 +1,8 @@
 /*
-    Escreva um programa que leia um número int e verifique se ele é um número armstrong. Um número armstrong é um número que é igual à soma de seus próprios dígitos elevados à quantidade de dígitos. Por exemplo, 153 é um número armstrong porque 1³ + 5³ + 3³ = 153.
+    Escreva um programa que leia um número int e verifique se ele é um número
+    armstrong. Um número armstrong é um número que é igual à soma de seus próprios
+    dígitos elevados à quantidade de dígitos. Por exemplo, 153 é um número armstrong
+    porque 1³ + 5³ + 3³ = 153.
 */
 
 #include <iostream>
