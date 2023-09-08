@@ -1,3 +1,12 @@
+/*
+    Escreva um programa que imprima os seguintes padrões de acordo com a
+    entrada, que define a altura do padrão. Para os exemplos abaixo a entrada
+    foi 3: 
+    ***       *       ***
+    ***       **      * *
+    ***       ***     ***
+*/
+
 #include <iostream>
 
 using namespace std;
