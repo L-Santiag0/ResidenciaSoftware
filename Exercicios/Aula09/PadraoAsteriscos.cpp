@@ -40,9 +40,9 @@ int main(){
     for (int coluna = 1 ; coluna <= altura ; coluna++){
         for (int linha = 1 ; linha <= altura ; linha++){
             if (coluna == 1 || coluna == altura || linha == 1 || linha == altura)
-                cout << "*";
+                cout << "* ";
             else
-                cout << " ";
+                cout << "  ";
         }
         cout << "\n";
     }
