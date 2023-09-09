@@ -24,39 +24,49 @@ using namespace std;
 int main(){
 
     int temperaturaEstacoes[250];
-    float tempMinima = 41, tempMaxima = 0, somaTemperaturas = 0, tempMedia = 0;
+    float tempMinima = 41, tempMaxima = 0, tempMedia = 0;
+    char simularHora;
 
-    unsigned seed = time(0);
-    srand(seed);
-
-    // Resolvendo letras 'a' e 'b'.
+    //Resolvendo a letra 'a'.
     for (int i = 0 ; i < 250 ; i++){
         temperaturaEstacoes[i] = rand()%30 + 10; // Ler a 'OBS' no início.
-
-        if (temperaturaEstacoes[i] < tempMinima)
-            tempMinima = temperaturaEstacoes[i];
-
-        else if (temperaturaEstacoes[i] > tempMaxima)
-            tempMaxima = temperaturaEstacoes[i];
-        
-        somaTemperaturas += temperaturaEstacoes[i];
     }
-    // Resolvendo a letra 'c'.
-    tempMedia = somaTemperaturas / 250;
 
-    cout << "\nMédia das temperaturas: " << tempMedia << endl;
-    cout << "Temperatura máxima: " << tempMaxima << endl;
-    cout << "Temperatura mínima: " << tempMinima << endl;
+    do {
+        float somaTemperaturas = 0;
 
-    // Resolvendo letra 'd' - atualização do array conforme a predição.
-    for (int i = 0 ; i < 250 ; i++){
-        if (temperaturaEstacoes[i] > tempMedia)
-            temperaturaEstacoes[i] += 1;
+        cout << "\n-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-\n";
+        // Resolvendo a letra 'b'.
+        for (int i = 0 ; i < 250 ; i++){
+            if (temperaturaEstacoes[i] < tempMinima)
+                tempMinima = temperaturaEstacoes[i];
 
-        else if (temperaturaEstacoes[i] < tempMedia)
-            temperaturaEstacoes[i] -= 2;
-        
-    }
+            else if (temperaturaEstacoes[i] > tempMaxima)
+                tempMaxima = temperaturaEstacoes[i];
+            
+            somaTemperaturas += temperaturaEstacoes[i];
+        }
+
+        // Resolvendo a letra 'c'.
+        tempMedia = somaTemperaturas / 250;
+
+        cout << "Média das temperaturas: " << tempMedia << endl;
+        cout << "Temperatura máxima: " << tempMaxima << endl;
+        cout << "Temperatura mínima: " << tempMinima << endl;
+
+        // Resolvendo letra 'd' - atualização do array conforme a predição.
+        for (int i = 0 ; i < 250 ; i++){
+            if (temperaturaEstacoes[i] > tempMedia)
+                temperaturaEstacoes[i] += 1;
+
+            else if (temperaturaEstacoes[i] < tempMedia)
+                temperaturaEstacoes[i] -= 2;            
+        }
+
+        cout << "\nDeseja simular um avanço no tempo (1h)? [Y/N] ";
+        cin >> simularHora;
+
+    } while (toupper(simularHora) == 'Y');
 
     return 0;
 }
