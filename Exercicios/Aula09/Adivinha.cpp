@@ -7,15 +7,13 @@
 
 #include <iostream>
 #include <cstdlib>
-#include <time.h>
 
 using namespace std;
 
 int main()
 {
     srand (time(0));
-    int numeroMaquina = rand()%100+1;
-    int tentativaAdivinha;
+    int numeroMaquina = rand()%100+1, tentativaAdivinha;
 
     cout << "\t ----- ADIVINHA -----\n";
     
