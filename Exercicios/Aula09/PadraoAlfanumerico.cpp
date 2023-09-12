@@ -19,8 +19,8 @@ int main()
 	
 	cout << "Digite a quantidade de linhas: ";
 	cin >> altura;
-	for (int coluna = 1 ; coluna <= altura ; coluna++){
-	    for (int linha = 1 ; linha <= coluna ; linha++){
+	for (int linha = 1 ; linha <= altura ; linha++){
+	    for (int coluna = 1 ; coluna <= linha ; coluna++){
 	        if (alfabetoUp <= 'Z'){
     	        cout << alfabetoUp;
     	        alfabetoUp += 1;
