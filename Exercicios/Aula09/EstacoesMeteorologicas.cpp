@@ -29,7 +29,7 @@ int main(){
 
     //Resolvendo a letra 'a'.
     for (int i = 0 ; i < 250 ; i++){
-        temperaturaEstacoes[i] = rand()%30 + 10; // Ler a 'OBS' no início.
+        temperaturaEstacoes[i] = rand()%31 + 10; // Ler a 'OBS' no início.
     }
 
     do {
